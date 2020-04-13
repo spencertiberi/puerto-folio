@@ -1,10 +1,6 @@
-# DEV React-Apollo Starter
+# Puerto Folio
 
-### Getting Started
-
-To start your project built off of this repository, click the **Fork** button in the top right of the github GUI. This will create a copy of this repository under your account. Share this repository with your team members so that everyone may work off of it.
-
-### Running the project
+## Running the project
 
 ```bash
 $ npm i
