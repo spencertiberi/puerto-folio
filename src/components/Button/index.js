@@ -10,8 +10,8 @@ const StyledButton = styled.button`
   padding: 2px 10px;
 `
 
-const Button = (props) => (
-  <StyledButton onClick={props.action}>{props.children}</StyledButton>
+const Button = ({ action, children }) => (
+  <StyledButton onClick={action}>{children}</StyledButton>
 )
 
 export default Button
