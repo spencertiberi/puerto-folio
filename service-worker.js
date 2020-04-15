@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/puerto-folio/precache-manifest.9106d225be8428dc354f04bd29930690.js"
+  "/puerto-folio/precache-manifest.e978eb96f3642ac84b4a52496333775e.js"
 );
 
 self.addEventListener('message', (event) => {
