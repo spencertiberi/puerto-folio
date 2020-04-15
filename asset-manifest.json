@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/puerto-folio/static/js/main.db1dc4cb.chunk.js",
+    "main.js.map": "/puerto-folio/static/js/main.db1dc4cb.chunk.js.map",
+    "runtime-main.js": "/puerto-folio/static/js/runtime-main.4343afb0.js",
+    "runtime-main.js.map": "/puerto-folio/static/js/runtime-main.4343afb0.js.map",
+    "static/js/2.3e5aefee.chunk.js": "/puerto-folio/static/js/2.3e5aefee.chunk.js",
+    "static/js/2.3e5aefee.chunk.js.map": "/puerto-folio/static/js/2.3e5aefee.chunk.js.map",
+    "index.html": "/puerto-folio/index.html",
+    "precache-manifest.9106d225be8428dc354f04bd29930690.js": "/puerto-folio/precache-manifest.9106d225be8428dc354f04bd29930690.js",
+    "service-worker.js": "/puerto-folio/service-worker.js",
+    "static/js/2.3e5aefee.chunk.js.LICENSE.txt": "/puerto-folio/static/js/2.3e5aefee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4343afb0.js",
+    "static/js/2.3e5aefee.chunk.js",
+    "static/js/main.db1dc4cb.chunk.js"
+  ]
+}
