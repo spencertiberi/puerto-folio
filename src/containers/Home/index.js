@@ -1,20 +1,24 @@
 import React from 'react'
-import Button from '../../components/Button'
-import Header from '../../components/Header'
-import { Input, Label } from '../../components/Form'
+import PageContainer from '../../components/PageContainer'
 import PageWrapper from '../../components/PageWrapper'
+import Button from '../../components/LinkButton'
+import { Image, TextContainer, Title, SubTitle } from './styles'
 import copy from '../../copy'
+import SplashImage from './paintbrush.png'
 
 const Home = () => (
-  <fragment>
-    <Header />
-    <PageWrapper>
-      {`Welcome to ${copy.title}!`}
-      <Label>Name</Label>
-      <Input placeholder="Enter Name" />
-      <Button>Submit</Button>
-    </PageWrapper>
-  </fragment>
+  <PageWrapper>
+    <PageContainer>
+      <Image src={SplashImage} />
+      <TextContainer>
+        <Title>{copy.title}</Title>
+        <SubTitle>{copy.catchPhrase}</SubTitle>
+        <Button to="/name" width="70vw">
+          Get Started!
+        </Button>
+      </TextContainer>
+    </PageContainer>
+  </PageWrapper>
 )
 
 export default Home
