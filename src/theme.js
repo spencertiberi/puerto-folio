@@ -2,12 +2,27 @@
 
 const theme = {
   colors: {
-    primary: '#bf87ed',
-    secondary: '#fffef7 ',
-    offblack: '#333',
+    primary: '#3A3F51',
+    secondary: '#2A56B6',
+    tertiary: '#3300FF',
+    highlight: '#FFDA2D',
+    lightAccent: '#E5CFC8',
+    darkAccent: '#AE684E',
+    greyScale: {
+      offWhite: '#F0F0F0',
+      light: '#E5E5E5',
+      medium: '#C4C4C4',
+      dark: '#9f9f9f',
+      offBlack: '#333333',
+    },
   },
   fonts: {
-    main: 'helvetica, arial, sans-sarif',
+    main: '-apple-system, BlinkMacSystemFont, helvetica, arial, sans-sarif',
+  },
+  headerSizes: {
+    h1: '38px',
+    h2: '24px',
+    h3: '11px',
   },
 }
 
