@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledButton = styled(Link)`
-  background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.secondary};
+  background-color: ${(props) => props.theme.colors.greyScale.offWhite};
+  color: ${(props) => props.theme.colors.primary};
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.75em;
+  justify-content: center;
+  font-size: 15px;
   text-decoration: none;
+  font-weight: 900;
   border: 0;
-  border-radius: 3px;
+  border-radius: 42px;
   padding: 5px 15px;
+  height: 42px;
   width: ${(props) => props.width || 'auto'};
 `
 
