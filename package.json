@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://spencertiberi.github.io/puerto-folio",
   "dependencies": {
+    "@rebass/grid": "^6.1.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
