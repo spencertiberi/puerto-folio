@@ -4,7 +4,8 @@ export const Bottom = styled.img`
   position: absolute;
   bottom: 0;
   z-index: -5;
-  @media only screen and (min-width: 600px) {
+  width: 100vw;
+  @media only screen and (min-width: 500px) {
     display: none;
   }
 `
@@ -14,7 +15,7 @@ export const Image = styled.img`
   width: auto;
   padding: 0 0 25vh 30px;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 500px) {
     padding: 0 0 0 30px;
   }
 `
