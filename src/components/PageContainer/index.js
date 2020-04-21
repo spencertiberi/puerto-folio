@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const PageContainer = styled.div`
-  padding: 15vh 4vw 10vh;
+  padding: 12vh 4vw 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;

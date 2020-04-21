@@ -2,22 +2,24 @@ import React from 'react'
 import PageContainer from '../../components/PageContainer'
 import PageWrapper from '../../components/PageWrapper'
 import Button from '../../components/LinkButton'
-import { Image, TextContainer, Title, SubTitle } from './styles'
+import { Bottom, Image, TextContainer, Title, SubTitle } from './styles'
 import copy from '../../copy'
-import SplashImage from './paintbrush.png'
+import bottom from './assets/Intersect.svg'
+import penguin from './assets/penguin.png'
 
 const Home = () => (
   <PageWrapper>
     <PageContainer>
-      <Image src={SplashImage} />
       <TextContainer>
         <Title>{copy.title}</Title>
         <SubTitle>{copy.catchPhrase}</SubTitle>
-        <Button to="/name" width="70vw">
-          Get Started!
-        </Button>
       </TextContainer>
+      <Image src={penguin} />
+      <Button to="/name" width="70vw">
+        GET STARTED
+      </Button>
     </PageContainer>
+    <Bottom src={bottom} alt="Bottom of page" />
   </PageWrapper>
 )
 
