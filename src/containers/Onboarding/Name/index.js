@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Button from '../../../components/LinkButton'
-import PageContainer from '../../../components/PageContainer'
 import PageWrapper from '../../../components/PageWrapper'
 import Input from '../../../components/Form'
 
@@ -9,14 +8,12 @@ const Name = () => {
 
   return (
     <PageWrapper>
-      <PageContainer>
-        <Input
-          placeholder="LeBron James"
-          label="What is your name?"
-          update={setName}
-        />
-        {name && <Button to="/study">Continue</Button>}
-      </PageContainer>
+      <Input
+        placeholder="LeBron James"
+        label="What is your name?"
+        update={setName}
+      />
+      {name && <Button to="/study">Continue</Button>}
     </PageWrapper>
   )
 }
