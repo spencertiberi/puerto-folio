@@ -1,7 +1,7 @@
 // Add global names and copy here
 
 const copy = {
-  title: 'Puerto Folio',
+  title: 'Digifolio',
   catchPhrase: 'Paint your story',
   studies: [
     'Agriculture',
