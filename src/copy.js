@@ -1,21 +1,68 @@
 // Add global names and copy here
+import calendar from './assets/skills/calendar.png'
+import colors from './assets/skills/colors.png'
+import communicate from './assets/skills/communicate.png'
+import criticalThinking from './assets/skills/critical-thinking.png'
+import globe from './assets/skills/globe.png'
+import goal from './assets/skills/goal.png'
+import happy from './assets/skills/happy.png'
+import helping from './assets/skills/helping.png'
+import idea from './assets/skills/idea.png'
+import multiple from './assets/skills/multiple.png'
+import search from './assets/skills/search.png'
+import services from './assets/skills/services.png'
+import spring from './assets/skills/spring.png'
+import statue from './assets/skills/statue.png'
+import teamwork from './assets/skills/teamwork.png'
+
+import arch from './assets/industry/arch.png'
+import biotech from './assets/industry/biotech.png'
+import caduceus from './assets/industry/caduceus.png'
+import cap from './assets/industry/cap.png'
+import capitol from './assets/industry/capitol.png'
+import categorize from './assets/industry/categorize.png'
+import laptop from './assets/industry/laptop.png'
+import law from './assets/industry/law.png'
+import palette from './assets/industry/palette.png'
+import price from './assets/industry/price.png'
 
 const copy = {
   title: 'Digifolio',
   catchPhrase: 'Paint your story',
+  getStarted: "Great, let's get started!",
+  helpText: `My name is Folio.
+
+  Enter your credit card 
+  and social security, and 
+  I’ll get you a job!`,
   studies: [
-    'Agriculture',
-    'Architecture',
-    'Arts',
-    'Business',
-    'Communications',
-    'Education',
-    'English',
-    'Foreign Language',
-    'Health Sciences',
-    'Philosophy',
-    'Physical Scienes',
-    'Social Sciences',
+    { title: 'Architecture & Engineering', image: arch },
+    { title: 'Arts & Communications', image: palette },
+    { title: 'Computers & Technology', image: laptop },
+    { title: 'Education & Social Services', image: cap },
+    { title: 'Government & Public Administration', image: capitol },
+    { title: 'Law & Law Enforcement', image: law },
+    { title: 'Management, Business, & Finance', image: price },
+    { title: 'Medicine & Health Care', image: caduceus },
+    { title: 'Science Research', image: biotech },
+    { title: 'Other', image: categorize },
+  ],
+  skills: [
+    { title: 'Analytical & Critical Thinking', image: criticalThinking },
+    { title: 'Collaboration & Coordination', image: teamwork },
+    { title: 'Communication (Oral & Written)', image: communicate },
+    { title: 'Cultural Awareness', image: globe },
+    { title: 'Decision Making', image: multiple },
+    { title: 'Design Thinking', image: colors },
+    { title: 'Emotional Intelligence', image: happy },
+    { title: 'Flexibility, Adaptability, & Agility', image: spring },
+    { title: 'Innovation, Creativity, & Entrepreneurial Spirit', image: idea },
+    { title: 'Leadership', image: statue },
+    { title: 'Organization', image: calendar },
+    { title: 'Problem-Solving', image: services },
+    { title: 'Purpose-Driven', image: goal },
+    { title: 'Research', image: search },
+    { title: 'Work Ethic & Accountability', image: helping },
   ],
 }
 
