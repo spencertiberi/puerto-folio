@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.js": "/puerto-folio/static/js/main.55abf48d.chunk.js",
-    "main.js.map": "/puerto-folio/static/js/main.55abf48d.chunk.js.map",
+    "main.js": "/puerto-folio/static/js/main.0130b6d4.chunk.js",
+    "main.js.map": "/puerto-folio/static/js/main.0130b6d4.chunk.js.map",
     "runtime-main.js": "/puerto-folio/static/js/runtime-main.4343afb0.js",
     "runtime-main.js.map": "/puerto-folio/static/js/runtime-main.4343afb0.js.map",
-    "static/js/2.79f9ab2c.chunk.js": "/puerto-folio/static/js/2.79f9ab2c.chunk.js",
-    "static/js/2.79f9ab2c.chunk.js.map": "/puerto-folio/static/js/2.79f9ab2c.chunk.js.map",
+    "static/js/2.c5656876.chunk.js": "/puerto-folio/static/js/2.c5656876.chunk.js",
+    "static/js/2.c5656876.chunk.js.map": "/puerto-folio/static/js/2.c5656876.chunk.js.map",
     "index.html": "/puerto-folio/index.html",
-    "precache-manifest.23838884699c741378e9c866fed6028b.js": "/puerto-folio/precache-manifest.23838884699c741378e9c866fed6028b.js",
+    "precache-manifest.9958ac52478a1ae3163c12d8a2c06102.js": "/puerto-folio/precache-manifest.9958ac52478a1ae3163c12d8a2c06102.js",
     "service-worker.js": "/puerto-folio/service-worker.js",
-    "static/js/2.79f9ab2c.chunk.js.LICENSE.txt": "/puerto-folio/static/js/2.79f9ab2c.chunk.js.LICENSE.txt",
+    "static/js/2.c5656876.chunk.js.LICENSE.txt": "/puerto-folio/static/js/2.c5656876.chunk.js.LICENSE.txt",
     "static/media/Intersect.svg": "/puerto-folio/static/media/Intersect.41aec343.svg",
-    "static/media/penguin.png": "/puerto-folio/static/media/penguin.3be8a113.png"
+    "static/media/littledude.png": "/puerto-folio/static/media/littledude.dd739804.png",
+    "static/media/penguin.png": "/puerto-folio/static/media/penguin.3be8a113.png",
+    "static/media/penguinWithClouds.png": "/puerto-folio/static/media/penguinWithClouds.3fb6b96a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4343afb0.js",
-    "static/js/2.79f9ab2c.chunk.js",
-    "static/js/main.55abf48d.chunk.js"
+    "static/js/2.c5656876.chunk.js",
+    "static/js/main.0130b6d4.chunk.js"
   ]
 }
