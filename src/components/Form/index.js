@@ -5,14 +5,15 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 `
 
 const InputField = styled.input`
-  color: ${(props) => props.theme.colors.offblack};
-  font-size: 1.5em;
-  border: none;
-  border-bottom: 2px solid ${(props) => props.theme.colors.primary};
-  padding: 2px 0px;
+  color: ${(props) => props.theme.colors.primary};
+  font-size: 11px;
+  border: 1px solid ${(props) => props.theme.colors.greyScale.medium};
+  padding: 7px;
+  width: auto;
 
   &:focus {
     background-color: #eee;
@@ -26,10 +27,12 @@ const Label = styled.label`
   font-weight: 700;
 `
 
-const Input = ({ placeholder, label, children, update }) => (
+const Input = ({ placeholder, label, children, update, value, onKeyPress }) => (
   <Container>
     {label && <Label>{label}</Label>}
     <InputField
+      value={value}
+      onKeyPress={onKeyPress}
       placeholder={placeholder}
       onChange={(e) => update(e.target.value)}
     >
