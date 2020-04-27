@@ -10,7 +10,7 @@ const Selection = ({ choosen, icon, title, updateChoice }) => {
       }}
     >
       {icon && <Image src={icon} alt={title} />}
-      <Title>{title}</Title>
+      <Title selected={choosen}>{title}</Title>
     </Container>
   )
 }

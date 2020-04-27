@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "http://spencertiberi.github.io/puerto-folio",
   "dependencies": {
+    "@fluentui/react": "^7.107.5",
     "@rebass/grid": "^6.1.0",
+    "lodash": "^4.17.15",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^6.0.0",
