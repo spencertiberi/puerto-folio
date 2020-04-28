@@ -30,11 +30,6 @@ const copy = {
   title: 'Digifolio',
   catchPhrase: 'Paint your story',
   getStarted: "Great, let's get started!",
-  helpText: `My name is Folio.
-
-  Enter your credit card 
-  and social security, and 
-  I’ll get you a job!`,
   studies: [
     { title: 'Architecture & Engineering', image: arch },
     { title: 'Arts & Communications', image: palette },
@@ -64,6 +59,16 @@ const copy = {
     { title: 'Research', image: search },
     { title: 'Work Ethic & Accountability', image: helping },
   ],
+  helpText: {
+    roles:
+      'Add as many roles that you are interested in that relate to your chosen industry',
+    home: `
+    My name is Folio.
+    
+    Enter your credit card 
+    and social security, and
+    I’ll get you a job!`,
+  },
 }
 
 export default copy

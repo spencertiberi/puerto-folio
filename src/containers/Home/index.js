@@ -20,7 +20,7 @@ const Home = () => (
       <SubTitle>{copy.catchPhrase}</SubTitle>
     </TextContainer>
     <Image src={penguin} />
-    <HelpText>{copy.helpText}</HelpText>
+    <HelpText>{copy.helpText.home}</HelpText>
     <Button to="/onboarding" light>
       GET STARTED
     </Button>
