@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4eef9996009f6fd24a1dcff41ba81ce1",
+    "revision": "69856c065a2d4e457a478796394d150a",
     "url": "/puerto-folio/index.html"
   },
   {
-    "revision": "794a570294027ee69ad4",
-    "url": "/puerto-folio/static/js/2.c5656876.chunk.js"
+    "revision": "b62cdad2d73b58e7a3e7",
+    "url": "/puerto-folio/static/js/2.faba585e.chunk.js"
   },
   {
     "revision": "3e6933cf6bd44f8f91c7aa725d75c668",
-    "url": "/puerto-folio/static/js/2.c5656876.chunk.js.LICENSE.txt"
+    "url": "/puerto-folio/static/js/2.faba585e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8b0f549701f5a9bbcca7",
-    "url": "/puerto-folio/static/js/main.0130b6d4.chunk.js"
+    "revision": "b204a468f11d22841ac1",
+    "url": "/puerto-folio/static/js/main.f80d2de7.chunk.js"
   },
   {
     "revision": "0465c2b0db5f455733e6",
