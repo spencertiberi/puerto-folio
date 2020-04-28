@@ -10,7 +10,7 @@ const PageWrapper = styled(Flex)`
   width: 100vw;
   padding: 60px 16px 0;
   font-family: ${(props) => props.theme.fonts.main};
-  color: ${(props) => props.theme.colors.offblack};
+  color: ${(props) => props.theme.colors.primary};
 `
 
 export default PageWrapper
