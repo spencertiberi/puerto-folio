@@ -5,7 +5,8 @@ import Heading from '../components/Heading'
 import Role from './components/Role'
 import Selection from './components/Selection'
 import Input from '../../../components/Form'
-import { Container, RoleContainer } from './styles'
+import HelpModal from '../../../components/HelpModal'
+import { Container, RoleContainer, Label } from './styles'
 import copy from '../../../copy'
 
 const Roles = ({ updateProgress, industry, updateRoles }) => {
@@ -25,7 +26,12 @@ const Roles = ({ updateProgress, industry, updateRoles }) => {
     <>
       <Container>
         <Heading>What is your role of interest?</Heading>
+        <Label>Industry</Label>
         <Selection title="hobo" icon={copy.studies[1].image} choosen />
+        <Label>
+          Role(s)
+          <HelpModal text={copy.helpText.roles} />
+        </Label>
         <Input
           type="text"
           placeholder="Role(s) of interest"
