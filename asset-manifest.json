@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/puerto-folio/static/js/main.adca4ade.chunk.js",
-    "main.js.map": "/puerto-folio/static/js/main.adca4ade.chunk.js.map",
-    "runtime-main.js": "/puerto-folio/static/js/runtime-main.4343afb0.js",
-    "runtime-main.js.map": "/puerto-folio/static/js/runtime-main.4343afb0.js.map",
-    "static/js/2.87efeec2.chunk.js": "/puerto-folio/static/js/2.87efeec2.chunk.js",
-    "static/js/2.87efeec2.chunk.js.map": "/puerto-folio/static/js/2.87efeec2.chunk.js.map",
-    "index.html": "/puerto-folio/index.html",
-    "precache-manifest.4e6797644745611daa0c769cdfcda861.js": "/puerto-folio/precache-manifest.4e6797644745611daa0c769cdfcda861.js",
-    "service-worker.js": "/puerto-folio/service-worker.js",
-    "static/js/2.87efeec2.chunk.js.LICENSE.txt": "/puerto-folio/static/js/2.87efeec2.chunk.js.LICENSE.txt",
-    "static/media/Intersect.svg": "/puerto-folio/static/media/Intersect.41aec343.svg",
-    "static/media/littledude.png": "/puerto-folio/static/media/littledude.dd739804.png",
-    "static/media/penguin.png": "/puerto-folio/static/media/penguin.3be8a113.png",
-    "static/media/penguinWithClouds.png": "/puerto-folio/static/media/penguinWithClouds.3fb6b96a.png",
-    "static/media/penguins.png": "/puerto-folio/static/media/penguins.f778116e.png"
+    "main.js": "/static/js/main.adca4ade.chunk.js",
+    "main.js.map": "/static/js/main.adca4ade.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a682081a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a682081a.js.map",
+    "static/js/2.dd9bb69f.chunk.js": "/static/js/2.dd9bb69f.chunk.js",
+    "static/js/2.dd9bb69f.chunk.js.map": "/static/js/2.dd9bb69f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.edc0c0007ac329fffb627b051f598250.js": "/precache-manifest.edc0c0007ac329fffb627b051f598250.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.dd9bb69f.chunk.js.LICENSE.txt": "/static/js/2.dd9bb69f.chunk.js.LICENSE.txt",
+    "static/media/Intersect.svg": "/static/media/Intersect.41aec343.svg",
+    "static/media/littledude.png": "/static/media/littledude.dd739804.png",
+    "static/media/penguin.png": "/static/media/penguin.3be8a113.png",
+    "static/media/penguinWithClouds.png": "/static/media/penguinWithClouds.3fb6b96a.png",
+    "static/media/penguins.png": "/static/media/penguins.f778116e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4343afb0.js",
-    "static/js/2.87efeec2.chunk.js",
+    "static/js/runtime-main.a682081a.js",
+    "static/js/2.dd9bb69f.chunk.js",
     "static/js/main.adca4ade.chunk.js"
   ]
 }
