@@ -26,6 +26,8 @@ import law from './assets/industry/law.png'
 import palette from './assets/industry/palette.png'
 import price from './assets/industry/price.png'
 
+import penguins from './assets/activities/penguins.png'
+
 const copy = {
   title: 'Digifolio',
   catchPhrase: 'Paint your story',
@@ -68,6 +70,21 @@ const copy = {
     Enter your credit card 
     and social security, and
     I’ll get you a job!`,
+  },
+  activities: {
+    friends: {
+      info:
+        'See what your friend says about how you would respond in different scenarios and what that might suggest about your interpersonal skills.',
+      image: penguins,
+      title: 'What Would Your Friend Say?',
+    },
+    photos: {
+      info:
+        'Through this activity, you will get to reflect on the past and envision the future versions of yourself through photos and comments from friends!',
+      subTitle:
+        'How have your photos captured your growth? Moments that mattered to you?',
+      title: 'Photo Time Machine',
+    },
   },
 }
 
