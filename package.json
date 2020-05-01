@@ -2,7 +2,7 @@
   "name": "bootcamp-web-starter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://spencertiberi.github.io/puerto-folio",
+  "homepage": "https://digifolio.spencertiberi.com",
   "dependencies": {
     "@fluentui/react": "^7.107.5",
     "@rebass/grid": "^6.1.0",
