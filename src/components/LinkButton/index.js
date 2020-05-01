@@ -25,8 +25,15 @@ const StyledButton = styled(Link)`
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
 `
 
-const LinkButton = ({ action, children, to, width, light }) => (
-  <StyledButton onClick={action} to={to} width={width} light={light}>
+const LinkButton = ({ as, onClick, children, to, width, light, href }) => (
+  <StyledButton
+    onClick={onClick}
+    to={to}
+    width={width}
+    light={light}
+    as={as}
+    href={href}
+  >
     {children}
   </StyledButton>
 )
