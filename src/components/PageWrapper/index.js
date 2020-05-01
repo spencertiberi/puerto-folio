@@ -11,6 +11,8 @@ const PageWrapper = styled(Flex)`
   padding: 60px 16px 0;
   font-family: ${(props) => props.theme.fonts.main};
   color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) =>
+    props.dark ? props.theme.colors.primary : '#ffffff'};
 `
 
 export default PageWrapper
