@@ -4,11 +4,12 @@ import Landing from './Landing'
 import Info from './Info'
 import Share from './Share'
 import FriendJoin from './FriendJoin'
+import Questions from './Questions'
 
 const Friends = () => (
   <Router basename="activities/friends">
     <Switch>
-      {/* <Route path="/photo" component={Photo} /> */}
+      <Route path="/questions" component={Questions} />
       <Route path="/friendjoin" component={FriendJoin} />
       <Route path="/info" component={Info} />
       <Route path="/share" component={Share} />

@@ -5,6 +5,7 @@ const theme = {
     primary: '#3A3F51',
     secondary: '#2A56B6',
     tertiary: '#3300FF',
+    friend: '#00BD40',
     highlight: '#FFDA2D',
     lightAccent: '#E5CFC8',
     darkAccent: '#AE684E',
