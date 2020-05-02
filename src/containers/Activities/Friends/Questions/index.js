@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { withRouter } from 'react-router-dom'
 import questions from './questions'
 import ProgressBar from './components/ProgressBar'
 import PageWrapper from '../../../../components/PageWrapper'
+import theme from '../../../../theme'
 import Avatars from './components/Avatars'
 import { Prompt, SelectionCard, SelectionContainer } from './styles'
 
@@ -13,6 +14,8 @@ const Questions = ({ history }) => {
 
   const user = 'You'
   const friend = 'Lousia'
+  const userColor = theme.colors.secondary
+  const friendColor = theme.colors.friend
 
   const handleChoice = (option) => {
     setUserChoice(option)
@@ -21,8 +24,6 @@ const Questions = ({ history }) => {
         Math.floor(Math.random() * questions[currentQuestion].selections.length)
       ]
     setFriendChoice(randomChoice)
-
-    console.log(randomChoice)
 
     const timeout = setTimeout(() => {
       setUserChoice('')
@@ -44,8 +45,8 @@ const Questions = ({ history }) => {
         {questions[currentQuestion].selections.map((option) => (
           <SelectionCard
             selectedColor={
-              (option === friendChoice && 'green') ||
-              (option === userChoice && 'blue')
+              (option === friendChoice && friendColor) ||
+              (option === userChoice && userColor)
             }
             key={option}
             onClick={() => !userChoice && handleChoice(option)}
