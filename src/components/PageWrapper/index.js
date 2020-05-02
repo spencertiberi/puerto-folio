@@ -8,11 +8,11 @@ const PageWrapper = styled(Flex)`
   justify-content: flex-start;
   height: 100vh;
   width: 100vw;
-  padding: 60px 16px 0;
+  padding: 60px 5vw 0;
   font-family: ${(props) => props.theme.fonts.main};
   color: ${(props) => props.theme.colors.primary};
   background-color: ${(props) =>
-    props.dark ? props.theme.colors.primary : '#ffffff'};
+    props.dark ? props.theme.colors.primary : 'none'};
 `
 
 export default PageWrapper
