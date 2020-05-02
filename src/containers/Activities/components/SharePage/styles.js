@@ -34,6 +34,7 @@ export const SocialMedia = styled(Flex)`
   flex-direction: row;
   width: 200px;
   justify-content: space-between;
+  margin-top: 30px;
 `
 
 export const SocialIcon = styled.img`
