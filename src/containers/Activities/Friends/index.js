@@ -5,10 +5,12 @@ import Info from './Info'
 import Share from './Share'
 import FriendJoin from './FriendJoin'
 import Questions from './Questions'
+import Hashtags from './Hashtags'
 
 const Friends = () => (
   <Router basename="activities/friends">
     <Switch>
+      <Route path="/hashtags" component={Hashtags} />
       <Route path="/questions" component={Questions} />
       <Route path="/friendjoin" component={FriendJoin} />
       <Route path="/info" component={Info} />

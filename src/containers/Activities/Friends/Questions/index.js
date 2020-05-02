@@ -29,7 +29,7 @@ const Questions = ({ history }) => {
       if (currentQuestion <= questions.length - 2) {
         setQuestion((prev) => prev + 1)
       } else {
-        history.push('/freeresponse')
+        history.push('/hashtags')
       }
     }, 5000)
     return () => clearTimeout(timeout)
