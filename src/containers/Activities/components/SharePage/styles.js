@@ -9,13 +9,12 @@ export const Container = styled(Flex)`
 
 export const Heading = styled(Flex)`
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
   word-wrap: normal;
   text-overflow: wrap;
   width: auto;
   height: auto;
-  margin-top: 25px;
 `
 
 export const LinkBox = styled(Flex)`

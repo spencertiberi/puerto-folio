@@ -31,7 +31,7 @@ const FriendJoin = () => {
             <Spinner size={SpinnerSize.large} />
           )}
         </ImageContainer>
-        {joined && <Button to="/1">START QUIZ</Button>}
+        {joined && <Button to="/questions">START QUIZ</Button>}
       </Container>
     </PageWrapper>
   )
