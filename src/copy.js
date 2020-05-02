@@ -30,7 +30,7 @@ import penguins from './assets/activities/penguins.png'
 
 const copy = {
   title: 'Digifolio',
-  catchPhrase: 'Paint your story',
+  catchPhrase: 'Visualize your career narrative',
   getStarted: "Great, let's get started!",
   studies: [
     { title: 'Architecture & Engineering', image: arch },
@@ -64,12 +64,7 @@ const copy = {
   helpText: {
     roles:
       'Add as many roles that you are interested in that relate to your chosen industry',
-    home: `
-    My name is Folio.
-    
-    Enter your credit card 
-    and social security, and
-    I’ll get you a job!`,
+    home: "Hi, I'm Folio!",
   },
   activities: {
     friends: {
