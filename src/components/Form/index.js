@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Flex } from '@rebass/grid'
 
-const Container = styled.div`
-  display: flex;
+const Container = styled(Flex)`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
 `
 
-const InputField = styled.input`
+const InputField = styled(Flex)`
+  display: flex;
   color: ${(props) => props.theme.colors.primary};
-  font-size: 11px;
+  font-size: 16px;
   border: 1px solid ${(props) => props.theme.colors.greyScale.medium};
-  padding: 7px;
-  width: auto;
+  padding: 8px;
+  width: 100%;
 
   &:focus {
     background-color: #eee;
@@ -31,6 +32,7 @@ const Input = ({ placeholder, label, children, update, value, onKeyPress }) => (
   <Container>
     {label && <Label>{label}</Label>}
     <InputField
+      as="input"
       value={value}
       onKeyPress={onKeyPress}
       placeholder={placeholder}
