@@ -16,12 +16,12 @@ export const Container = styled(Flex)`
   padding: 5px 4px 5px 4px;
 `
 export const Image = styled.img`
-  height: 15px;
-  width: 15px;
+  height: 20px;
+  width: 20px;
 `
 export const Title = styled.div`
   padding-left: 5px;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 600;
   color: ${(props) => (props.selected ? '#fff' : props.theme.colors.primary)};
   width: auto;

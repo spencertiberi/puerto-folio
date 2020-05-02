@@ -15,5 +15,5 @@ export const Text = styled.div`
 
 export const Image = styled.img`
   height: auto;
-  width: 70vw;
+  width: 290px;
 `
