@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Flex } from '@rebass/grid'
 
@@ -7,7 +7,8 @@ const Wrapper = styled(Flex)`
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: ${(props) => `${props.vh * 100}px`};
+  min-height: 100vh;
+  min-height: ${(props) => `${props.vh * 100}px`};
   width: 100vw;
   padding: 10px 5vw 0;
   font-family: ${(props) => props.theme.fonts.main};
@@ -17,7 +18,11 @@ const Wrapper = styled(Flex)`
 `
 
 const PageWrapper = ({ children, dark }) => {
-  const vh = window.innerHeight * 0.01
+  const [vh, setVh] = useState(window.innerHeight * 0.01)
+
+  window.addEventListener('resize', () => {
+    setVh(window.innerHeight * 0.01)
+  })
 
   return (
     <Wrapper vh={vh} dark={dark}>
