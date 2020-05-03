@@ -16,7 +16,6 @@ const Hashtags = () => {
   const [hashtags, setHashtags] = useState([])
 
   const handleEnter = (e) => {
-    console.log(hashtags)
     if (
       currHashtag &&
       currHashtag.match(/^ *$/) === null &&

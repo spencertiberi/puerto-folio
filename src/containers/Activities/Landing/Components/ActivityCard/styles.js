@@ -10,12 +10,6 @@ export const Title = styled(Flex)`
   text-align: center;
 `
 
-// export const IconCircle = styled.img`
-//   width: ${(props) => props.diameter};
-//   height: ${(props) => props.diameter};
-//   border-radius: ${(props) => props.diameter};
-// `
-
 export const IconCircle = styled.img`
   width: ${(props) => props.diameter || '100px'};
   height: auto;
