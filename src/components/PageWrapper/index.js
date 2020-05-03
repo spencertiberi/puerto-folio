@@ -9,7 +9,7 @@ const Wrapper = styled(Flex)`
   justify-content: flex-start;
   height: ${(props) => `${props.vh * 100}px`};
   width: 100vw;
-  padding: 60px 5vw 0;
+  padding: 10px 5vw 0;
   font-family: ${(props) => props.theme.fonts.main};
   color: ${(props) => props.theme.colors.primary};
   background-color: ${(props) =>

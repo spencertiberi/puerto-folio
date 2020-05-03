@@ -28,5 +28,5 @@ export const Container = styled(Flex)`
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 15px;
 `

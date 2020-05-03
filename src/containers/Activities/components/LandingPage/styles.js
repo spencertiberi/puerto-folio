@@ -25,7 +25,7 @@ export const SubTitle = styled.div`
 `
 
 export const Image = styled.img`
-  margin-top: 240px;
+  margin-top: 150px;
   height: auto;
   max-width: 375px;
 `

@@ -26,7 +26,7 @@ export const ImageContainer = styled(Flex)`
   justify-content: center;
   width: 100%;
   height: 300px;
-  margin-top: 150px;
+  margin-top: 120px;
 `
 
 export const Image = styled.img`
