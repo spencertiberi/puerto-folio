@@ -10,6 +10,7 @@ const Container = styled(Flex)`
   align-items: center;
   justify-content: flex-start;
   padding: 8px;
+  cursor: pointer;
 `
 
 const Text = styled(Flex)`
