@@ -5,17 +5,30 @@ import ProgressBar from './components/ProgressBar'
 import PageWrapper from '../../../../components/PageWrapper'
 import theme from '../../../../theme'
 import Avatars from './components/Avatars'
-import { Prompt, SelectionCard, SelectionContainer } from './styles'
+import { BigNum, Prompt, SelectionCard, SelectionContainer } from './styles'
+
+const count = 3
 
 const Questions = ({ history }) => {
   const [currentQuestion, setQuestion] = useState(0)
   const [userChoice, setUserChoice] = useState('')
   const [friendChoice, setFriendChoice] = useState('')
+  const [countDown, setCountDown] = useState(0)
 
   const user = 'You'
   const friend = 'Lousia'
   const userColor = theme.colors.secondary
   const friendColor = theme.colors.friend
+
+  const startCountDown = () => {
+    const interval = setInterval(() => {
+      setCountDown((prev) => prev - 1)
+    }, 1000)
+    const timeout = setTimeout(() => {
+      clearInterval(interval)
+    }, count * 1000)
+    return () => clearTimeout(timeout)
+  }
 
   const handleChoice = (option) => {
     setUserChoice(option)
@@ -24,6 +37,8 @@ const Questions = ({ history }) => {
         Math.floor(Math.random() * questions[currentQuestion].selections.length)
       ]
     setFriendChoice(randomChoice)
+    setCountDown(count)
+    startCountDown()
 
     const timeout = setTimeout(() => {
       setUserChoice('')
@@ -32,7 +47,7 @@ const Questions = ({ history }) => {
       } else {
         history.push('/hashtags')
       }
-    }, 5000)
+    }, count * 1000)
     return () => clearTimeout(timeout)
   }
 
@@ -41,6 +56,7 @@ const Questions = ({ history }) => {
       <ProgressBar percent={(currentQuestion + 1) / (questions.length + 1)} />
       <Avatars user={user} friend={friend} />
       <Prompt>{questions[currentQuestion].prompt}</Prompt>
+      {countDown > 0 && <BigNum>{countDown}</BigNum>}
       <SelectionContainer>
         {questions[currentQuestion].selections.map((option) => (
           <SelectionCard

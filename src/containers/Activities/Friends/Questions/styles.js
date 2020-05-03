@@ -36,3 +36,18 @@ export const SelectionContainer = styled(Flex)`
   position: fixed;
   bottom: 10px;
 `
+
+export const BigNum = styled(Flex)`
+  position: absolute;
+  z-index: 150;
+  font-size: 120px;
+  font-weight: bold;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  color: ${(props) => props.theme.colors.primary};
+  top: 280px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: ${(props) => props.theme.colors.yellow};
+  text-shadow: 0 0 50px #ffda2d;
+`
