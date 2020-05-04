@@ -47,7 +47,8 @@ const Landing = () => (
           title="Create Portfolio"
           image={createPortfolio}
           diameter="42px"
-          to="portfolio"
+          as="a"
+          href="/portfolio"
         />
       </Container>
     </PageWrapper>
