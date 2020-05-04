@@ -17,6 +17,11 @@ const theme = {
       dark: '#9f9f9f',
       offBlack: '#333333',
     },
+    portfolio: {
+      red: { light: '#FF8686', regular: '#FF5555', dark: '#8B0404' },
+      blue: { light: '#3C69CC', regular: '#2A56B6', dark: '#20376A' },
+      yellow: { light: '#FFEC93', regular: '#FFE464', dark: '#9E8D38' },
+    },
   },
   fonts: {
     main: '-apple-system, BlinkMacSystemFont, helvetica, arial, sans-sarif',
