@@ -21,7 +21,7 @@ export const RoleContainer = styled(Flex)`
 export const Label = styled(Flex)`
   flex-direction: row;
   align-items: center;
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
   color: ${(props) => props.theme.colors.primary};
   margin-bottom: 8px;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
@@ -6,6 +6,7 @@ import theme from './theme'
 import Activities from './containers/Activities'
 import Home from './containers/Home'
 import Onboarding from './containers/Onboarding'
+import Portfolio from './containers/Portfolio'
 import copy from './copy'
 
 const App = () => {
@@ -55,6 +56,7 @@ const App = () => {
             <title>{copy.title}</title>
           </Helmet>
           <Switch>
+            <Route path="/portfolio" component={Portfolio} />
             <Route path="/activities" component={ActivitiesWithProps} />
             <Route path="/onboarding" component={OnboardingWithProps} />
             <Route path="/" component={Home} />

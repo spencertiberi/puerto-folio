@@ -11,7 +11,7 @@ export const Text = styled.div`
   text-overflow: wrap;
   max-width: 325px;
   height: auto;
-  margin-top: 250px;
+  margin-top: 150px;
 `
 
 export const Container = styled(Flex)`

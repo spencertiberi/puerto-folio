@@ -9,10 +9,10 @@ export const Modal = styled(Callout)`
 export const Icon = styled(Flex)`
   align-items: center;
   justify-content: center;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 10px;
-  font-size: 8px;
+  font-size: 16px;
   background-color: ${(props) => props.theme.colors.greyScale.medium};
   color: #ffffff;
 `

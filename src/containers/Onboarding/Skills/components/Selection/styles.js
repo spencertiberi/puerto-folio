@@ -1,7 +1,7 @@
 import styled from 'styled-components'
+import { Flex } from '@rebass/grid'
 
-export const Container = styled.div`
-  display: flex;
+export const Container = styled(Flex)`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;

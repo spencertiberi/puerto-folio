@@ -27,10 +27,15 @@ import palette from './assets/industry/palette.png'
 import price from './assets/industry/price.png'
 
 import penguins from './assets/activities/penguins.png'
+import friend from './assets/activities/friend.png'
+import photo from './assets/activities/photo.png'
+import traces from './assets/activities/traces.png'
+import burning from './assets/activities/burning.png'
+import work from './assets/activities/work.png'
 
 const copy = {
   title: 'Digifolio',
-  catchPhrase: 'Paint your story',
+  catchPhrase: 'Visualize your career narrative',
   getStarted: "Great, let's get started!",
   studies: [
     { title: 'Architecture & Engineering', image: arch },
@@ -64,12 +69,7 @@ const copy = {
   helpText: {
     roles:
       'Add as many roles that you are interested in that relate to your chosen industry',
-    home: `
-    My name is Folio.
-    
-    Enter your credit card 
-    and social security, and
-    I’ll get you a job!`,
+    home: "Hi, I'm Folio!",
   },
   activities: {
     friends: {
@@ -77,6 +77,7 @@ const copy = {
         'See what your friend says about how you would respond in different scenarios and what that might suggest about your interpersonal skills.',
       image: penguins,
       title: 'What Would Your Friend Say?',
+      icon: friend,
     },
     photos: {
       info:
@@ -84,6 +85,19 @@ const copy = {
       subTitle:
         'How have your photos captured your growth? Moments that mattered to you?',
       title: 'Photo Time Machine',
+      icon: photo,
+    },
+    traces: {
+      title: 'Traces of Creation',
+      icon: traces,
+    },
+    work: {
+      title: 'A Day at Work',
+      icon: work,
+    },
+    burning: {
+      title: 'Burning Questions',
+      icon: burning,
     },
   },
 }

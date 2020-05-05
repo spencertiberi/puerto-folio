@@ -36,7 +36,9 @@ const Skills = ({ updateProgress }) => {
 
   return (
     <>
-      <Heading>What are your top skills?</Heading>
+      <Heading sub="Pick 3 strengths that you identify with the most.">
+        What are your top skills?
+      </Heading>
       <Choices>{selections}</Choices>
       {skills.length === 3 && <Button to="/fin">Continue</Button>}
     </>

@@ -5,4 +5,5 @@ export const Choices = styled.ul`
   flex-direction: column;
   padding: 0 0 0 50px;
   width: 70vw;
+  height: auto;
 `
