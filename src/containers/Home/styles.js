@@ -5,9 +5,7 @@ export const Bottom = styled.img`
   bottom: 0;
   z-index: -1;
   width: 100vw;
-  @media only screen and (min-width: 500px) {
-    display: none;
-  }
+  max-height: 500px;
 `
 
 export const HelpText = styled.div`
@@ -21,10 +19,6 @@ export const HelpText = styled.div`
   width: 205px;
   height: auto;
   margin-top: 35px;
-
-  @media only screen and (min-width: 500px) {
-    color: ${(props) => props.theme.colors.primary};
-  }
 `
 
 export const Image = styled.img`
