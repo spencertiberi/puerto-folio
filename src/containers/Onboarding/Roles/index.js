@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import _ from 'lodash'
 import Button from '../../../components/LinkButton'
 import Heading from '../components/Heading'
 import Role from './components/Role'
@@ -21,10 +20,6 @@ const Roles = ({ updateProgress, industry, updateRoles }) => {
       setCurrRole('')
     }
   }
-  console.log(industry)
-  // find index of industry using lodash for icon
-  // const index = _.findIndex(copy.studies, (o) => o.title === industry.title)
-  // const icon = copy.studies[index].image
 
   return (
     <>
