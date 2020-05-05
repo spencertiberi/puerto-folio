@@ -11,41 +11,67 @@ import copy from './copy'
 
 const App = () => {
   const stateSchema = {
-    name: '',
-    study: '',
+    name: 'Gabe',
+    study: 'Defense Against the Dark Arts',
     field: {
       title: '',
       icon: '',
     },
-    roles: [],
-    skills: [],
-  }
-  const [name, setName] = useState(stateSchema.name)
-  const [study, setStudy] = useState(stateSchema.study)
-  const [field, setField] = useState(stateSchema.field)
-  const [roles, setRoles] = useState(stateSchema.roles)
-  const [skills, setSkills] = useState(stateSchema.skills)
-
-  const state = {
-    name,
-    study,
-    field,
-    roles,
-    skills,
+    roles: ['Nutrition Journalist'],
+    skills: [copy.skills[8], copy.skills[0], copy.skills[12]],
   }
 
-  const updateState = {
-    name: setName,
-    study: setStudy,
-    field: setField,
-    roles: setRoles,
-    skills: setSkills,
+  // Credit to https://joshwcomeau.com/react/persisting-react-state-in-localstorage/
+  function useStickyState(defaultValue, key) {
+    const [value, setValue] = React.useState(() => {
+      const stickyValue = window.localStorage.getItem(key)
+      return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
+    })
+    React.useEffect(() => {
+      window.localStorage.setItem(key, JSON.stringify(value))
+    }, [key, value])
+    return [value, setValue]
   }
 
-  const ActivitiesWithProps = () => <Activities state={state} />
+  const [name, setName] = useStickyState(stateSchema.name, 'name')
+  const [study, setStudy] = useStickyState(stateSchema.study, 'study')
+  const [field, setField] = useStickyState(stateSchema.field, 'field')
+  const [roles, setRoles] = useStickyState(stateSchema.roles, 'roles')
+  const [skills, setSkills] = useStickyState(stateSchema.skills, 'skills')
+
+  const PortfolioWithProps = () => (
+    <Portfolio
+      name={name}
+      study={study}
+      field={field}
+      roles={roles}
+      skills={skills}
+    />
+  )
+
+  const ActivitiesWithProps = () => (
+    <Activities
+      name={name}
+      study={study}
+      field={field}
+      roles={roles}
+      skills={skills}
+    />
+  )
 
   const OnboardingWithProps = () => (
-    <Onboarding state={state} updateState={updateState} />
+    <Onboarding
+      setName={setName}
+      setStudy={setStudy}
+      setField={setField}
+      setRoles={setRoles}
+      setSkills={setSkills}
+      name={name}
+      study={study}
+      field={field}
+      roles={roles}
+      skills={skills}
+    />
   )
 
   return (
@@ -56,7 +82,7 @@ const App = () => {
             <title>{copy.title}</title>
           </Helmet>
           <Switch>
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/portfolio" component={PortfolioWithProps} />
             <Route path="/activities" component={ActivitiesWithProps} />
             <Route path="/onboarding" component={OnboardingWithProps} />
             <Route path="/" component={Home} />
