@@ -9,14 +9,11 @@ import {
   Row,
   Background,
 } from './styles'
-import purpose from '../../../assets/purpose.png'
-import creativity from '../../../assets/creative.png'
-import critical from '../../../assets/critical.png'
 import user from '../../../assets/persona.png'
 import background from '../../../assets/topbg.svg'
 
-const SkillCard = ({ image, title, color }) => (
-  <SkillContainer>
+const SkillCard = ({ image, title, color, to }) => (
+  <SkillContainer to={`portfolio/${color}/${to}`}>
     <Title>{title}</Title>
     <IconCircle color={color}>
       <IconImage src={image} />
@@ -24,16 +21,31 @@ const SkillCard = ({ image, title, color }) => (
   </SkillContainer>
 )
 
-const TopSection = () => (
+const TopSection = ({ skills }) => (
   <Container>
     <Background src={background} />
     <Row>
-      <SkillCard image={creativity} title="CREATIVITY" color="red" />
+      <SkillCard
+        image={skills[0].image}
+        title={'Creativity'.toUpperCase()}
+        color="red"
+        to={skills[0].title}
+      />
     </Row>
     <Row>
-      <SkillCard image={critical} title="CRITICAL THINKING" color="blue" />
+      <SkillCard
+        image={skills[1].image}
+        title={'Critical Thinking'.toUpperCase()}
+        color="blue"
+        to={skills[1].title}
+      />
       <UserImage src={user} />
-      <SkillCard image={purpose} title="PURPOSE-DRIVEN" color="yellow" />
+      <SkillCard
+        image={skills[2].image}
+        title={'Purpose-Driven'.toUpperCase()}
+        color="yellow"
+        to={skills[2].title}
+      />
     </Row>
   </Container>
 )

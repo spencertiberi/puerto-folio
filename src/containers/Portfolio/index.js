@@ -1,16 +1,16 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, withRouter } from 'react-router-dom'
 import PageWrapper from '../../components/PageWrapper'
 import Overview from './Overview'
+import Breakdown from './Breakdown'
 
 const Portfolio = () => (
-  <Router>
-    <PageWrapper>
-      <Switch>
-        <Route path="/" component={Overview} />
-      </Switch>
-    </PageWrapper>
-  </Router>
+  <PageWrapper>
+    <Switch>
+      <Route path="/portfolio/:color/:skill" component={Breakdown} />
+      <Route path="/portfolio" component={Overview} />
+    </Switch>
+  </PageWrapper>
 )
 
-export default Portfolio
+export default withRouter(Portfolio)
