@@ -5,9 +5,6 @@ import MiddleSection from './components/MiddleSection'
 import Contact from './components/Contact'
 import nutrition from '../assets/nutrition.png'
 import Bottom from './components/Bottom'
-import purpose from '../assets/purpose.png'
-import creativity from '../assets/creative.png'
-import critical from '../assets/critical.png'
 import { Image } from './styles'
 
 const Overview = ({ name, study, roles, skills }) => {

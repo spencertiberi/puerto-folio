@@ -27,7 +27,7 @@ const TopSection = ({ skills }) => (
     <Row>
       <SkillCard
         image={skills[0].image}
-        title={'Creativity'.toUpperCase()}
+        title={skills[0].title.toUpperCase()}
         color="red"
         to={skills[0].title}
       />
@@ -35,14 +35,14 @@ const TopSection = ({ skills }) => (
     <Row>
       <SkillCard
         image={skills[1].image}
-        title={'Critical Thinking'.toUpperCase()}
+        title={skills[1].title.toUpperCase()}
         color="blue"
         to={skills[1].title}
       />
       <UserImage src={user} />
       <SkillCard
         image={skills[2].image}
-        title={'Purpose-Driven'.toUpperCase()}
+        title={skills[2].title.toUpperCase()}
         color="yellow"
         to={skills[2].title}
       />

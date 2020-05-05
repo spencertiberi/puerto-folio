@@ -18,10 +18,10 @@ export const Container = styled(Flex)`
   position: relative;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 365px;
   width: 100vw;
-  padding-top: 65px;
+  padding-bottom: 25px;
   margin-bottom: 25px;
 `
 
@@ -68,7 +68,7 @@ export const IconImage = styled.img`
 
 export const Row = styled(Flex)`
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 `
 
