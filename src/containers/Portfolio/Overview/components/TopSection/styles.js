@@ -1,6 +1,18 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Flex } from '@rebass/grid'
+
+const press = keyframes`
+  from {
+    transform: translate(0, 0);
+    box-shadow: 0 4px;
+  }
+
+  to {
+    transform: translate(0, 4px);
+    box-shadow: 0 0;
+  }
+`
 
 export const Container = styled(Flex)`
   position: relative;
@@ -41,6 +53,11 @@ export const IconCircle = styled(Flex)`
   align-items: center;
   justify-content: center;
   margin-bottom: 5px;
+  :hover {
+    box-shadow: inherit;
+    animation: 0.5s ${press} infinite;
+    animation-direction: alternate;
+  }
 `
 
 export const IconImage = styled.img`
