@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { Flex } from '@rebass/grid'
 
 export const Container = styled(Flex)`
@@ -21,10 +22,13 @@ export const Background = styled.img`
   z-index: -50;
 `
 
-export const SkillContainer = styled(Flex)`
+export const SkillContainer = styled(Link)`
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.primary};
 `
 
 export const IconCircle = styled(Flex)`
@@ -57,6 +61,8 @@ export const Title = styled(Flex)`
   font-weight: bold;
   margin-bottom: 5px;
   text-align: center;
+  justify-content: center;
+  width: 120px;
 `
 
 export const UserImage = styled.img`
