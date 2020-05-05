@@ -21,13 +21,17 @@ const Roles = ({ updateProgress, industry, updateRoles }) => {
       setCurrRole('')
     }
   }
+  console.log(industry)
+  // find index of industry using lodash for icon
+  // const index = _.findIndex(copy.studies, (o) => o.title === industry.title)
+  // const icon = copy.studies[index].image
 
   return (
     <>
       <Container>
         <Heading>What is your role of interest?</Heading>
         <Label>Industry</Label>
-        <Selection title="hobo" icon={copy.studies[1].image} choosen />
+        <Selection title={industry.title} icon={industry.image} choosen />
         <Label>
           Role(s)
           <HelpModal text={copy.helpText.roles} />
