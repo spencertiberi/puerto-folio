@@ -86,5 +86,5 @@ export const UserImage = styled.img`
   display: flex;
   width: 97px;
   height: 97px;
-  margin: 0 10vw;
+  margin: 0 5vw;
 `
