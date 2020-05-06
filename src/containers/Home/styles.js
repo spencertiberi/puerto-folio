@@ -19,6 +19,10 @@ export const HelpText = styled.div`
   width: 205px;
   height: auto;
   margin-top: 35px;
+
+  @media only screen and (min-height: 980px) {
+    color: ${(props) => props.theme.colors.primary};
+  }
 `
 
 export const Image = styled.img`
