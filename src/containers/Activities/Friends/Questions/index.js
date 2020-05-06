@@ -20,6 +20,13 @@ const Questions = ({ history, name }) => {
   const userColor = theme.colors.secondary
   const friendColor = theme.colors.friend
 
+  const changeToFriendColor = (randomChoice) => {
+    const timeout = setTimeout(() => {
+      setFriendChoice(randomChoice)
+    }, 1000)
+    return () => clearTimeout(timeout)
+  }
+
   const startCountDown = () => {
     setCountDown(count)
     const interval = setInterval(() => {
@@ -44,9 +51,10 @@ const Questions = ({ history, name }) => {
       questions[currentQuestion].selections[
         Math.floor(Math.random() * questions[currentQuestion].selections.length)
       ]
-    setFriendChoice(randomChoice)
 
-    const timeout = setTimeout(() => startCountDown(), 2000)
+    changeToFriendColor(randomChoice)
+
+    const timeout = setTimeout(() => startCountDown(), 3000)
     return () => clearTimeout(timeout)
   }
 
