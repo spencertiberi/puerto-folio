@@ -73,8 +73,10 @@ const copy = {
   },
   activities: {
     friends: {
-      info:
-        'See what your friend says about how you would respond in different scenarios and what that might suggest about your interpersonal skills.',
+      info: `
+      How would you respond in different interpersonal scenarios? 
+        
+      Find out by challenging a friend to this game!`,
       image: penguins,
       title: 'What Would Your Friend Say?',
       icon: friend,
