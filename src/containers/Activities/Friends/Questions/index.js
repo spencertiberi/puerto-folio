@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { withRouter } from 'react-router-dom'
 import questions from './questions'
 import ProgressBar from './components/ProgressBar'
@@ -19,6 +19,8 @@ const Questions = ({ history, name }) => {
   const friend = 'Louisa'
   const userColor = theme.colors.secondary
   const friendColor = theme.colors.friend
+
+  useEffect(() => setCountDown(0))
 
   const startCountDown = () => {
     setCountDown(count)
