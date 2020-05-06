@@ -2,6 +2,7 @@ import React from 'react'
 import _ from 'lodash'
 import { useParams } from 'react-router-dom'
 import copy from '../../../copy'
+import BackButton from '../components/BackButton'
 import BigCircle from './components/BigCircle'
 import Domain from './components/Domain'
 import academic from '../assets/academic.png'
@@ -16,6 +17,7 @@ const Breakdown = () => {
 
   return (
     <>
+      <BackButton to="/portfolio" />
       <Domains>
         <Domain
           title="ACADEMIC"

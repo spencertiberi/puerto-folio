@@ -3,6 +3,7 @@ import _ from 'lodash'
 import { useParams } from 'react-router-dom'
 import Domain from './components/Domain'
 import ProjectCard from './components/ProjectCard'
+import BackButton from '../components/BackButton'
 import copy from '../../../copy'
 import { Title, ProjectContainer } from './styles'
 
@@ -12,6 +13,7 @@ const Projects = () => {
   const icon = copy.skills[index].image
   return (
     <>
+      <BackButton to={`/portfolio/${color}/${skill}`} />
       <Title>{domain.toUpperCase()}</Title>
       <Domain icon={icon} color={color} />
       <ProjectContainer>
