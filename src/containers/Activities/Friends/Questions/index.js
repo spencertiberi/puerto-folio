@@ -9,38 +9,24 @@ import { BigNum, Prompt, SelectionCard, SelectionContainer } from './styles'
 
 const count = 3
 
-const Questions = ({ history }) => {
+const Questions = ({ history, name }) => {
   const [currentQuestion, setQuestion] = useState(0)
   const [userChoice, setUserChoice] = useState('')
   const [friendChoice, setFriendChoice] = useState('')
   const [countDown, setCountDown] = useState(0)
 
-  const user = 'You'
-  const friend = 'Lousia'
+  const user = name
+  const friend = 'Louisa'
   const userColor = theme.colors.secondary
   const friendColor = theme.colors.friend
 
   const startCountDown = () => {
+    setCountDown(count)
     const interval = setInterval(() => {
       setCountDown((prev) => prev - 1)
     }, 1000)
     const timeout = setTimeout(() => {
       clearInterval(interval)
-    }, count * 1000)
-    return () => clearTimeout(timeout)
-  }
-
-  const handleChoice = (option) => {
-    setUserChoice(option)
-    const randomChoice =
-      questions[currentQuestion].selections[
-        Math.floor(Math.random() * questions[currentQuestion].selections.length)
-      ]
-    setFriendChoice(randomChoice)
-    setCountDown(count)
-    startCountDown()
-
-    const timeout = setTimeout(() => {
       setUserChoice('')
       if (currentQuestion <= questions.length - 2) {
         setQuestion((prev) => prev + 1)
@@ -48,6 +34,18 @@ const Questions = ({ history }) => {
         history.push('/hashtags')
       }
     }, count * 1000)
+    return () => clearTimeout(timeout)
+  }
+
+  const handleChoice = async (option) => {
+    setUserChoice(option)
+    const randomChoice =
+      questions[currentQuestion].selections[
+        Math.floor(Math.random() * questions[currentQuestion].selections.length)
+      ]
+    setFriendChoice(randomChoice)
+
+    const timeout = setTimeout(() => startCountDown(), 2000)
     return () => clearTimeout(timeout)
   }
 
@@ -60,10 +58,10 @@ const Questions = ({ history }) => {
       <SelectionContainer>
         {questions[currentQuestion].selections.map((option) => (
           <SelectionCard
-            selectedColor={
-              (option === friendChoice && friendColor) ||
-              (option === userChoice && userColor)
-            }
+            userSelect={option === userChoice}
+            userColor={userColor}
+            friendColor={friendColor}
+            friendSelect={option === friendChoice}
             key={option}
             onClick={() => !userChoice && handleChoice(option)}
           >
