@@ -17,14 +17,27 @@ const Breakdown = () => {
   return (
     <>
       <Domains>
-        <Domain title="ACADEMIC" icon={academic} color={color} offset="45vw" />
+        <Domain
+          title="ACADEMIC"
+          icon={academic}
+          color={color}
+          offset="45vw"
+          to={`${skill}/academic`}
+        />
         <Domain
           title="PROFESSIONAL"
           icon={professional}
           color={color}
           offset="62vw"
+          to={`${skill}/professional`}
         />
-        <Domain title="PERSONAL" icon={personal} color={color} offset="45vw" />
+        <Domain
+          title="PERSONAL"
+          icon={personal}
+          color={color}
+          offset="45vw"
+          to={`${skill}/personal`}
+        />
         <BigCircle color={color} icon={icon} />
       </Domains>
     </>

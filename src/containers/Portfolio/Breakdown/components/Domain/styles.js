@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { Flex } from '@rebass/grid'
 
 export const Circle = styled(Flex)`
@@ -22,11 +23,14 @@ export const Title = styled(Flex)`
   font-weight: bold;
   text-align: center;
   margin-bottom: 8px;
+  color: ${(props) => props.theme.colors.primary};
 `
 
-export const Container = styled(Flex)`
+export const Container = styled(Link)`
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: ${(props) => props.offset};
+  text-decoration: none;
 `
