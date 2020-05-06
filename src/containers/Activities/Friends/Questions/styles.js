@@ -66,5 +66,8 @@ export const BigNum = styled(Flex)`
   top: 280px;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: ${(props) => props.theme.colors.yellow};
-  text-shadow: 0 0 50px #ffda2d;
+
+  @media only screen and (min-width: 500px) {
+    text-shadow: 0 0 50px #ffda2d;
+  }
 `
