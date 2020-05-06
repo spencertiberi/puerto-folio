@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import _ from 'lodash'
 import Button from '../../../components/LinkButton'
 import Heading from '../components/Heading'
 import Role from './components/Role'
@@ -27,7 +26,7 @@ const Roles = ({ updateProgress, industry, updateRoles }) => {
       <Container>
         <Heading>What is your role of interest?</Heading>
         <Label>Industry</Label>
-        <Selection title="hobo" icon={copy.studies[1].image} choosen />
+        <Selection title={industry.title} icon={industry.image} choosen />
         <Label>
           Role(s)
           <HelpModal text={copy.helpText.roles} />

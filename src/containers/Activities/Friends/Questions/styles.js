@@ -1,13 +1,25 @@
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
 import { Flex } from '@rebass/grid'
+
+const friendSelection = keyframes`
+  from {
+  }
+
+  to {
+    background-color: #00BD40;
+  }
+`
 
 export const SelectionCard = styled(Flex)`
   width: 90vw;
   height: 65px;
   max-width: 400px;
-  background-color: ${(props) => props.selectedColor || '#ffffff'};
+  background-color: ${(props) =>
+    props.userSelect ? props.userColor : '#ffffff'};
   color: ${(props) =>
-    props.selectedColor ? '#ffffff' : props.theme.colors.primary};
+    props.userSelect || props.friendSelect
+      ? '#ffffff'
+      : props.theme.colors.primary};
   font-size: 16px;
   line-height: 19px;
   font-weight: bold;
@@ -17,6 +29,11 @@ export const SelectionCard = styled(Flex)`
   border-radius: 5px;
   margin-bottom: 16px;
   padding: 5px 15px;
+  animation: ${(props) =>
+    props.friendSelect &&
+    css`
+      ${friendSelection} 1s forwards
+    `};
 `
 
 export const Prompt = styled(Flex)`

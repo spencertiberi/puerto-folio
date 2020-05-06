@@ -14,38 +14,43 @@ import Study from './Study'
 import PageWrapper from '../../components/PageWrapper'
 import ProgressBar from './components/ProgressBar'
 
-const Onboarding = ({ state, updateState }) => {
+const Onboarding = ({
+  setName,
+  setStudy,
+  setField,
+  setRoles,
+  setSkills,
+  field,
+  skills,
+}) => {
   const [progress, setProgress] = useState(0)
 
   const IndustryWithProps = () => (
-    <Industry
-      updateProgress={setProgress}
-      updateIndustry={updateState.industry}
-    />
+    <Industry updateProgress={setProgress} updateIndustry={setField} />
   )
 
   const NameWithProps = () => (
-    <Name updateProgress={setProgress} updateName={updateState.name} />
+    <Name updateProgress={setProgress} updateName={setName} />
   )
 
   const RolesWithProps = () => (
     <Roles
       updateProgress={setProgress}
-      industry={state.industry}
-      updateRoles={updateState.roles}
+      industry={field}
+      updateRoles={setRoles}
     />
   )
 
   const SkillsWithProps = () => (
     <Skills
       updateProgress={setProgress}
-      skills={state.skills}
-      updateSkills={updateState.skills}
+      skills={skills}
+      updateSkills={setSkills}
     />
   )
 
   const StudyWithProps = () => (
-    <Study updateProgress={setProgress} updateStudy={updateState.study} />
+    <Study updateProgress={setProgress} updateStudy={setStudy} />
   )
 
   const FinWithProps = () => <Fin updateProgress={setProgress} />

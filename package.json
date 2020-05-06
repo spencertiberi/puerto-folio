@@ -1,6 +1,6 @@
 {
-  "name": "bootcamp-web-starter",
-  "version": "0.1.0",
+  "name": "digifolio",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://digifolio.spencertiberi.com",
   "dependencies": {

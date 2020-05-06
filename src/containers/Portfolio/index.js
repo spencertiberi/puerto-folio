@@ -1,16 +1,24 @@
 import React from 'react'
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, withRouter } from 'react-router-dom'
 import PageWrapper from '../../components/PageWrapper'
 import Overview from './Overview'
+import Breakdown from './Breakdown'
+import Projects from './Projects'
 
-const Portfolio = () => (
-  <Router>
+const Portfolio = ({ name, study, roles, skills }) => {
+  const OverviewWithProps = () => (
+    <Overview name={name} study={study} roles={roles} skills={skills} />
+  )
+
+  return (
     <PageWrapper>
       <Switch>
-        <Route path="/" component={Overview} />
+        <Route path="/portfolio/:color/:skill/:domain" component={Projects} />
+        <Route path="/portfolio/:color/:skill" component={Breakdown} />
+        <Route path="/portfolio" component={OverviewWithProps} />
       </Switch>
     </PageWrapper>
-  </Router>
-)
+  )
+}
 
-export default Portfolio
+export default withRouter(Portfolio)

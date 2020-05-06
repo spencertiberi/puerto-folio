@@ -7,29 +7,32 @@ import nutrition from '../assets/nutrition.png'
 import Bottom from './components/Bottom'
 import { Image } from './styles'
 
-const user = {
-  name: 'Gabe',
-  major: 'Defense Agaisnt the Dark Arts',
-  opportunity: {
-    image: nutrition,
-    title: 'Nutrition Journalist',
-  },
-  email: 'brianrosenheck@jordan.edu',
-  phone: 'XXX-XXX-XXXX',
-}
+const Overview = ({ name, study, roles, skills }) => {
+  const user = {
+    name: name || 'Gabe',
+    major: study || 'Defense Agaisnt the Dark Arts',
+    opportunity: {
+      title: roles[0] || 'Nutrition Journalist',
+      image: nutrition,
+    },
+    email: 'brianrosenheck@jordan.edu',
+    phone: 'XXX-XXX-XXXX',
+    skills,
+  }
 
-const Overview = () => (
-  <>
-    <Heading>{`Hi, I’m ${user.name}.`}</Heading>
-    <TopSection />
-    <Heading>{`A recent graduate in ${user.major.toUpperCase()}`}</Heading>
-    <MiddleSection />
-    <Heading>{`Looking for opportunities as a ${user.opportunity.title.toUpperCase()}`}</Heading>
-    <Image src={user.opportunity.image} />
-    <Heading>Reach me at...</Heading>
-    <Contact email={user.email} phone={user.phone} />
-    <Bottom />
-  </>
-)
+  return (
+    <>
+      <Heading>{`Hi, I’m ${user.name}.`}</Heading>
+      <TopSection skills={user.skills} />
+      <Heading>{`A recent graduate in ${user.major.toUpperCase()}`}</Heading>
+      <MiddleSection />
+      <Heading>{`Looking for opportunities as a ${user.opportunity.title.toUpperCase()}`}</Heading>
+      <Image src={user.opportunity.image} />
+      <Heading>Reach me at...</Heading>
+      <Contact email={user.email} phone={user.phone} />
+      <Bottom />
+    </>
+  )
+}
 
 export default Overview

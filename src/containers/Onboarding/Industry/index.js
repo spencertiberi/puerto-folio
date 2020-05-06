@@ -12,10 +12,13 @@ const Industry = ({ updateProgress, updateIndustry }) => {
 
   updateProgress(3 / 6)
 
-  const compileIndustry = () =>
-    industry.title === 'Other'
-      ? updateIndustry({ title: other, icon: industry.image })
-      : updateIndustry(industry)
+  const compileIndustry = (curr) => {
+    if (curr.title === 'Other') {
+      updateIndustry({ title: other, icon: curr.image })
+    } else {
+      updateIndustry(curr)
+    }
+  }
 
   return (
     <>
@@ -43,7 +46,7 @@ const Industry = ({ updateProgress, updateIndustry }) => {
         </Container>
       )}
       {industry && (
-        <Button onClick={() => compileIndustry} to="/roles">
+        <Button onClick={() => compileIndustry(industry)} to="/roles">
           CONTINUE
         </Button>
       )}

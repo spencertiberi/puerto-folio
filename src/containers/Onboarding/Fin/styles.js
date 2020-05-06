@@ -10,10 +10,12 @@ export const Text = styled.div`
   text-overflow: wrap;
   width: auto;
   height: auto;
-  margin-top: 92px;
+  margin-top: 45px;
 `
 
 export const Image = styled.img`
-  height: auto;
-  width: 290px;
+  height: 50vh;
+  width: auto;
+  max-width: 286px;
+  max-height: 400px;
 `

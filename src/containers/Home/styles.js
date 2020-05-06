@@ -5,9 +5,8 @@ export const Bottom = styled.img`
   bottom: 0;
   z-index: -1;
   width: 100vw;
-  @media only screen and (min-width: 500px) {
-    display: none;
-  }
+  height: auto;
+  max-height: 50vh;
 `
 
 export const HelpText = styled.div`
@@ -22,7 +21,7 @@ export const HelpText = styled.div`
   height: auto;
   margin-top: 35px;
 
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-height: 965px) {
     color: ${(props) => props.theme.colors.primary};
   }
 `

@@ -3,11 +3,7 @@ import { Container, Image, Title, IconContainer } from './styles'
 
 const Selection = ({ choosen, greyedOut, icon, title, updateChoice }) => {
   return (
-    <Container
-      onClick={() => {
-        updateChoice()
-      }}
-    >
+    <Container onClick={() => updateChoice()}>
       {icon && (
         <IconContainer selected={choosen}>
           <Image src={icon} alt={title} />
