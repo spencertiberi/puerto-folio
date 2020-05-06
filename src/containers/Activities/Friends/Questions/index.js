@@ -20,8 +20,6 @@ const Questions = ({ history, name }) => {
   const userColor = theme.colors.secondary
   const friendColor = theme.colors.friend
 
-  useEffect(() => setCountDown(0))
-
   const startCountDown = () => {
     setCountDown(count)
     const interval = setInterval(() => {
@@ -35,6 +33,7 @@ const Questions = ({ history, name }) => {
       } else {
         history.push('/hashtags')
       }
+      setCountDown(0)
     }, count * 1000)
     return () => clearTimeout(timeout)
   }
